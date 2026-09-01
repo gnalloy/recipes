@@ -41,12 +41,13 @@ It does not absorb neighboring module responsibilities. Core primitives stay in 
 - `gnalloy.org/recipes` (`recipes`)
 
 ## Gnalloy Dependencies
-- `gnalloy.org/gnalloy`
+
 - `gnalloy.org/codec-http1`
 - `gnalloy.org/codec-http2`
 - `gnalloy.org/codec-http3`
 - `gnalloy.org/codec-mqtt`
 - `gnalloy.org/codec-websocket`
+- `gnalloy.org/gnalloy`
 
 ## Common Integration Pattern
 - Configuration is passed through explicit constructors and option structs rather than package-level mutable state.

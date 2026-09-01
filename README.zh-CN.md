@@ -41,12 +41,13 @@ GOWORK=off GOTOOLCHAIN=local go test ./... -count=1
 - `gnalloy.org/recipes`（`recipes`）
 
 ## Gnalloy 依赖
-- `gnalloy.org/gnalloy`
+
 - `gnalloy.org/codec-http1`
 - `gnalloy.org/codec-http2`
 - `gnalloy.org/codec-http3`
 - `gnalloy.org/codec-mqtt`
 - `gnalloy.org/codec-websocket`
+- `gnalloy.org/gnalloy`
 
 ## 常见集成方式
 - 配置通过显式构造函数和 option struct 传入，不使用包级可变状态。

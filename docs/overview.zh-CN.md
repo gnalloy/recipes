@@ -19,15 +19,17 @@
 - `gnalloy.org/recipes`（`recipes`）
 
 ## 直接 Gnalloy 依赖
-- `gnalloy.org/gnalloy`
+
 - `gnalloy.org/codec-http1`
 - `gnalloy.org/codec-http2`
 - `gnalloy.org/codec-http3`
 - `gnalloy.org/codec-mqtt`
 - `gnalloy.org/codec-websocket`
+- `gnalloy.org/gnalloy`
 
-## 当前模块规划中的直接下游
-- 当前模块规划中没有其他仓库直接依赖该模块。
+## 当前仓库集合中的直接下游
+
+- 当前本地 Gnalloy 仓库集合中没有仓库直接依赖本模块。
 
 ## 架构位置
 

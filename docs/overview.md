@@ -19,15 +19,17 @@ This module provides reusable assembly recipes. Recipes combine core, codec, han
 - `gnalloy.org/recipes` (`recipes`)
 
 ## Direct Gnalloy Dependencies
-- `gnalloy.org/gnalloy`
+
 - `gnalloy.org/codec-http1`
 - `gnalloy.org/codec-http2`
 - `gnalloy.org/codec-http3`
 - `gnalloy.org/codec-mqtt`
 - `gnalloy.org/codec-websocket`
+- `gnalloy.org/gnalloy`
 
-## Direct Dependents in the Current Module Plan
-- No repository in the current module plan depends on this module directly.
+## Direct Dependents in the Current Repository Set
+
+- No repository in the current local Gnalloy set directly depends on this module.
 
 ## Architecture Position
 
