@@ -136,12 +136,15 @@ func TestHTTP1ServerRecipe(t *testing.T) {
 	if len(capture.messages) != 1 {
 		t.Fatalf("messages=%d, want 1", len(capture.messages))
 	}
-	req := capture.messages[0].(http1.Request)
+	req := capture.messages[0].(*http1.Request)
 	if req.Method != "GET" || req.URI != "/ok" || req.Headers.Get("Host") != "example" {
 		t.Fatalf("request=%+v", req)
 	}
 
-	if err := ch.WriteAndFlush(http1.Response{StatusCode: 200, Headers: http1.Headers{"Server": "gnalloy"}}); err != nil {
+	resp := http1.AcquireResponse()
+	resp.StatusCode = 200
+	resp.Headers = http1.Headers{"Server": "gnalloy"}
+	if err := ch.WriteAndFlush(resp); err != nil {
 		t.Fatal(err)
 	}
 	if raw := string(concatWrites(t, sink.writes)); !strings.Contains(raw, "HTTP/1.1 200 OK") || !strings.Contains(raw, "Server: gnalloy") {

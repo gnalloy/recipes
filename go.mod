@@ -3,11 +3,11 @@ module gnalloy.org/recipes
 go 1.25.0
 
 require (
-	gnalloy.org/codec-http1 v0.0.0-20260831155325-667cf0239537
-	gnalloy.org/codec-http2 v0.0.0-20260831155500-3f718673813f
-	gnalloy.org/codec-http3 v0.0.0-20260831155517-be03d6916f81
+	gnalloy.org/codec-http1 v0.0.0-20260902210723-976908e32b9c
+	gnalloy.org/codec-http2 v0.0.0-20260902212248-301a69ebe19b
+	gnalloy.org/codec-http3 v0.0.0-20260902212440-a8ef849f4c5c
 	gnalloy.org/codec-mqtt v0.0.0-20260831155652-dc0e87534d15
-	gnalloy.org/codec-websocket v0.0.0-20260831160450-2ba459767d68
+	gnalloy.org/codec-websocket v0.0.0-20260902200437-cf0d092da8d9
 	gnalloy.org/gnalloy v0.0.0-20260831153720-533bb39b2ad6
 )
 
